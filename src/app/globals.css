@@ -44,7 +44,7 @@ body {
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-gray-800  transition-all active:scale-95 text-white mx-auto;
   }
 
   .btn-ping {
@@ -57,7 +57,7 @@ body {
 
   /* hero section */
   .hero_tag {
-    @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
+    @apply text-center xl:text-5xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
   }
 
   /* about section */
