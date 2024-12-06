@@ -31,7 +31,6 @@ const Testimonials = () => {
         }}
         modules={[Autoplay]}
         spaceBetween={30}
-        slidesPerView={2}
         speed={2000}
         loop={true}
         effect="slide"
