@@ -3,6 +3,7 @@ import NavBar from "../sections/header/Header";
 import About from "@/sections/about/About";
 import Projects from "@/sections/projects/Projects";
 import Testimonials from "@/sections/testimonials/Testimonials";
+import Contact from "@/sections/contact/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Projects />
       <Testimonials />
+      <Contact />
     </main>
   );
 }

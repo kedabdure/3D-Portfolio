@@ -1,7 +1,10 @@
 "use client"
 
 import { useState } from 'react';
-import Globe from 'react-globe.gl';
+import dynamic from 'next/dynamic';
+
+// Dynamic import for Globe component to prevent SSR error
+const Globe = dynamic(() => import('react-globe.gl'), { ssr: false });
 
 import Button from '@/components/Botton';
 
