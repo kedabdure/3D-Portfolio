@@ -22,7 +22,7 @@ const Hero = () => {
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
-    <section className="min-h-screen flex flex-col relative">
+    <section className="min-h-screen flex flex-col relative" id='home'>
       {/* Text Section */}
       <div className="w-full mx-auto flex flex-col mt-28 sm:mt-36 lg:mt-[80px] gap-3">
         <p className="text-center font-medium text-white font-generalsans">

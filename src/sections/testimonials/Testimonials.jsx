@@ -21,7 +21,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="testimonials">
       <h3 className="head-text">Hear from My Clients</h3>
       <Swiper
         ref={swiperRef}
