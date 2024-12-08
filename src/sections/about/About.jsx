@@ -11,27 +11,26 @@ import Button from '@/components/Botton';
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText('abdurehimk77@gmail.com');
-    setHasCopied(true);
+  // const handleCopy = () => {
+  //   navigator.clipboard.writeText('abdurehimk77@gmail.com');
+  //   setHasCopied(true);
 
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
-  };
+  //   setTimeout(() => {
+  //     setHasCopied(false);
+  //   }, 2000);
+  // };
 
   return (
     <section className="c-space my-20" id="about">
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+      <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="assets/developer.jpg" alt="grid-1" className="w-full sm:h-[276px] h-fit object-cover" />
 
             <div>
               <p className="grid-headtext">Hi, I’m Abdurehim Kedir</p>
               <p className="grid-subtext">
-                With 4 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
+                With three years of experience, I have developed expertise in both frontend and backend development, building dynamic and responsive websites.
               </p>
             </div>
           </div>
@@ -39,25 +38,24 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="assets/techno-stack.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-cover" />
 
             <div>
-              <p className="grid-headtext">Tech Stack</p>
+              <p className="grid-headtext">Technology Stack</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
+                I specialize in a diverse range of languages, frameworks, and tools that enable me to create robust and scalable applications.
               </p>
             </div>
           </div>
         </div>
 
         {/* 3D Globe */}
-        <div className="col-span-1 xl:row-span-4">
+        <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
               <Globe
-                height={356}
-                width={356}
+                height={300}
+                width={300}
                 backgroundColor="rgba(0, 0, 0, 0)"
                 backgroundImageOpacity={.1}
                 showAtmosphere
@@ -76,7 +74,7 @@ const About = () => {
         </div>
 
         {/* Passion */}
-        <div className="xl:col-span-2 xl:row-span-3">
+        {/* <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
@@ -88,10 +86,10 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Contact */}
-        <div className="xl:col-span-1 xl:row-span-2">
+        {/* <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
             <img
               src="assets/grid4.png"
@@ -107,7 +105,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
