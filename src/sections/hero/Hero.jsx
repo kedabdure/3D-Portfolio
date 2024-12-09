@@ -6,7 +6,6 @@ import { Canvas } from '@react-three/fiber';
 import React, { Suspense } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '@/constants';
-import HeroCamera from '@/components/HeroCamera';
 import Button from '@/components/Botton';
 import DeveloperRoom from '@/components/DeveloperRoom';
 
@@ -19,26 +18,22 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex flex-col bg-black overflow-hidden" id='home'>
-      {/* left Section */}
-      <div className='c-space w-full h-full flex items-center gap-5 relative'>
-        <div className="w-[600px] flex flex-col items-start mt-28 sm:mt-36 lg:mt-40 gap-3">
+      <div className='c-space w-full h-full flex flex-col lg:flex-row items-center gap-5'>
+        <div className=" flex flex-col items-center justify-center lg:items-start mt-32 sm:mt-36 lg:mt-40 gap-5">
           <p className="text-center font-medium text-white-700 font-generalsans">
             <span className="sm:text-2xl lg:text-2xl text-xl">
               Hi, I am Abdurehim <span className="waving-hand">👋</span>
             </span>
           </p>
-          <p className='hero_tag head-text mx-w-[200px]'>Building Products, Shaping Brands</p>
-
-          {/* Button */}
-          <div className="mt-32">
+          <p className='hero_tag head-text w-full lg:mx-w-[90%]'>Building Products, Shaping Brands</p>
+          <div className="mt-10 lg:mt-32">
             <a href="#contact" className="w-fit">
               <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-60 h-14 border-" />
             </a>
           </div>
         </div>
 
-        {/* 3D Objects Section */}
-        <div className="w-full h-full absolute right-0 lg:w-[800px] top-0">
+        <div className="w-full lg:w-[700px] h-[350px] md:h-[95vh]">
           <Canvas className="w-full h-full">
             <ambientLight intensity={1} />
             <directionalLight intensity={3} position={[0, 10, 5]} />
@@ -54,15 +49,13 @@ const Hero = () => {
                 target={[0, 0, 0]}
                 autoRotate={true}
               />
-              <HeroCamera>
-                <Center>
-                  <DeveloperRoom
-                    scale={3}
-                    rotation={[0, 0, 0]}
-                    position={[0, -3, 0]}
-                  />
-                </Center>
-              </HeroCamera>
+              <Center>
+                <DeveloperRoom
+                  rotation={[0, 0, 0]}
+                  scale={sizes.deskScale}
+                  position={sizes.deskPosition}
+                />
+              </Center>
             </Suspense>
           </Canvas>
         </div>

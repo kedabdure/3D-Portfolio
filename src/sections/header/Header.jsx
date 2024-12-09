@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
-            Abdure
+            Abd K.
           </a>
 
           <button
@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
 
       <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-        <nav className="p-5">
+        <nav className="p-12">
           <NavItems onClick={closeMenu} />
         </nav>
       </div>
