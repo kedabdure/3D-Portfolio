@@ -25,7 +25,7 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/developer.jpg" alt="grid-1" className="w-full sm:h-[276px] h-fit object-cover" />
+            <img src="assets/developer.jpg" alt="grid-1" className="rounded-2xl w-full sm:h-[276px] h-fit object-cover" />
 
             <div>
               <p className="grid-headtext">Hi, I’m Abdurehim Kedir</p>
@@ -38,7 +38,7 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/techno-stack.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-cover" />
+            <img src="assets/techno-stack.png" alt="grid-2" className="rounded-2xl w-full sm:h-[276px] h-fit object-cover" />
 
             <div>
               <p className="grid-headtext">Technology Stack</p>
@@ -52,9 +52,9 @@ const About = () => {
         {/* 3D Globe */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
+            <div className="rounded-2xl w-full sm:h-[276px] h-fit flex justify-center items-center">
               <Globe
-                height={300}
+                height={276}
                 width={300}
                 backgroundColor="rgba(0, 0, 0, 0)"
                 backgroundImageOpacity={.1}

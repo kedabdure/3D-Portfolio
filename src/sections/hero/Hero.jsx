@@ -1,18 +1,14 @@
 "use client";
 
 import Loading from '@/components/Loading';
-import HackerRoom from '@/components/HackerRoom';
-import { PerspectiveCamera } from '@react-three/drei';
+import { Center, OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '@/constants';
-import Target from '@/components/Target';
-import ReactLogo from '@/components/ReactLogo';
-import Cube from '@/components/Cube';
-import Rings from '@/components/Rings';
 import HeroCamera from '@/components/HeroCamera';
 import Button from '@/components/Botton';
+import DeveloperRoom from '@/components/DeveloperRoom';
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -22,49 +18,54 @@ const Hero = () => {
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
-    <section className="min-h-screen flex flex-col relative" id='home'>
-      {/* Text Section */}
-      <div className="w-full mx-auto flex flex-col mt-28 sm:mt-36 lg:mt-[80px] gap-3 items-center">
-        <p className="text-center font-medium text-white font-generalsans">
-          <span className="sm:text-2xl lg:text-2xl text-xl">
-            Hi, I am Abdurehim <span className="waving-hand">👋</span>
-          </span>
-        </p>
-        <p className='hero_tag text-gray_gradient'>Innovating Digital Solutions</p>
-      </div>
+    <section className="min-h-screen flex flex-col bg-black overflow-hidden" id='home'>
+      {/* left Section */}
+      <div className='c-space w-full h-full flex items-center gap-5 relative'>
+        <div className="w-[600px] flex flex-col items-start mt-28 sm:mt-36 lg:mt-40 gap-3">
+          <p className="text-center font-medium text-white-700 font-generalsans">
+            <span className="sm:text-2xl lg:text-2xl text-xl">
+              Hi, I am Abdurehim <span className="waving-hand">👋</span>
+            </span>
+          </p>
+          <p className='hero_tag head-text mx-w-[200px]'>Building Products, Shaping Brands</p>
 
-      {/* 3D Objects Section */}
-      <div className="w-full h-full absolute inset-0 mt-8 sm:mt-16 lg:mt-0">
-        <Canvas className="w-full h-full">
-          <Suspense fallback={<Loading />}>
-            <PerspectiveCamera makeDefault position={[0, 0, 30]} />
+          {/* Button */}
+          <div className="mt-32">
+            <a href="#contact" className="w-fit">
+              <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-60 h-14 border-" />
+            </a>
+          </div>
+        </div>
 
-            <HeroCamera>
-              <HackerRoom
-                isMobile={isMobile}
-                scale={sizes.deskScale}
-                position={sizes.deskPosition}
-                rotation={[0.1, -Math.PI, 0]}
-              />
-            </HeroCamera>
-
-            <group>
-              <Target position={sizes.targetPosition} />
-              <ReactLogo position={sizes.reactLogoPosition} />
-              <Cube position={sizes.cubePosition} />
-              <Rings position={sizes.ringPosition} />
-            </group>
+        {/* 3D Objects Section */}
+        <div className="w-full h-full absolute right-0 lg:w-[800px] top-0">
+          <Canvas className="w-full h-full">
             <ambientLight intensity={1} />
-            <directionalLight intensity={0.5} position={[0, 0, 5]} />
-          </Suspense>
-        </Canvas>
-      </div>
-
-      {/* Button */}
-      <div className="absolute bottom-2 sm:bottom-4 lg:bottom-4 left-0 right-0 w-full z-10 c-space">
-        <a href="#about" className="w-fit">
-          <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-60" />
-        </a>
+            <directionalLight intensity={3} position={[0, 10, 5]} />
+            <directionalLight intensity={3} position={[10, 10, -5]} />
+            <directionalLight intensity={2} position={[0, 5, 10]} />
+            <directionalLight intensity={1} position={[-10, -5, -10]} />
+            <Suspense fallback={<Loading />}>
+              <PerspectiveCamera makeDefault position={[0, 0, 26]} />
+              <OrbitControls
+                enableZoom={false}
+                enablePan={true}
+                enableRotate={true}
+                target={[0, 0, 0]}
+                autoRotate={true}
+              />
+              <HeroCamera>
+                <Center>
+                  <DeveloperRoom
+                    scale={3}
+                    rotation={[0, 0, 0]}
+                    position={[0, -3, 0]}
+                  />
+                </Center>
+              </HeroCamera>
+            </Suspense>
+          </Canvas>
+        </div>
       </div>
     </section>
   );

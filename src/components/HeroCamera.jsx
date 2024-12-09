@@ -1,28 +1,40 @@
-import { useFrame } from "@react-three/fiber"
-import { useRef } from "react"
-import { easing } from "maath"
+import { useFrame } from "@react-three/fiber";
+import { useRef, useEffect } from "react";
+import { easing } from "maath";
+import { OrbitControls } from "@react-three/drei";
 
-const HeroCamera = ({ children, isMobile }) => {
-  const groupRef = useRef()
+const HeroCamera = ({ children }) => {
+  const groupRef = useRef();
+  const controlsRef = useRef();
+
+  // Set the target to the center of the object (0, 0, 0 by default)
+  useEffect(() => {
+    // if (controlsRef.current) {
+    //   controlsRef.current.target.set(0, 0, 0); // Adjust target to object center
+    //   controlsRef.current.update(); // Apply changes
+    // }
+  }, []);
 
   useFrame((state, delta) => {
-    easing.damp3(groupRef.current.position, [0, 0, 8], 0.25, delta);
-
-    if (!isMobile) {
-      // Clamp the x-rotation to be between -Math.PI/2 and Math.PI/2 (half a circle)
-      const clampedX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, -state.pointer.y / 3));
-
-      // Apply the dampE function with the clamped value for rotation
-      easing.dampE(groupRef.current.rotation, [clampedX, state.pointer.x / 5, 0]);
-    }
-
-  })
+    // Smoothly move the camera group to position [0, 0, 8]
+    // if (groupRef.current) {
+    //   easing.damp3(groupRef.current.position, [0, 0, 8], 0.25, delta);
+    // }
+  });
 
   return (
     <group ref={groupRef}>
+      {/* <OrbitControls
+        ref={controlsRef}
+        enableZoom={false}
+        enablePan={true}
+        enableRotate={true}
+        target={[0, 0, 0]}
+        autoRotate={true}
+      /> */}
       {children}
     </group>
-  )
-}
+  );
+};
 
-export default HeroCamera
+export default HeroCamera;
