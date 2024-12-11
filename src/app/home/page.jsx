@@ -41,7 +41,7 @@ const Hero = () => {
             <directionalLight intensity={2} position={[0, 5, 10]} />
             <directionalLight intensity={1} position={[-10, -5, -10]} />
             <Suspense fallback={<Loading />}>
-              <PerspectiveCamera makeDefault position={[0, 0, 26]} />
+              <PerspectiveCamera makeDefault position={[0, 5, 26]} />
               <OrbitControls
                 enableZoom={false}
                 enablePan={true}
