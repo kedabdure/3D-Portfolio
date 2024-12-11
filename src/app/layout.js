@@ -1,4 +1,6 @@
 import "./index.css";
+import Navbar from "@/sections/header/Header";
+import Footer from "@/sections/footer/Footer";
 
 export const metadata = {
   title: "Portofolio",
@@ -9,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
