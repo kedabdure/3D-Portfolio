@@ -1,24 +1,23 @@
 "use client"
 
 import { useState } from 'react';
-import dynamic from 'next/dynamic';
 
-// Dynamic import for Globe component to prevent SSR error
-const Globe = dynamic(() => import('react-globe.gl'), { ssr: false });
+
+import Globe from '@/components/Globe';
 
 import Button from '@/components/Botton';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
-  // const handleCopy = () => {
-  //   navigator.clipboard.writeText('abdurehimk77@gmail.com');
-  //   setHasCopied(true);
+  const handleCopy = () => {
+    navigator.clipboard.writeText('abdurehimk77@gmail.com');
+    setHasCopied(true);
 
-  //   setTimeout(() => {
-  //     setHasCopied(false);
-  //   }, 2000);
-  // };
+    setTimeout(() => {
+      setHasCopied(false);
+    }, 2000);
+  };
 
   return (
     <section className="c-space my-20" id="about">
@@ -52,18 +51,8 @@ const About = () => {
         {/* 3D Globe */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <div className="rounded-2xl w-full sm:h-[276px] h-fit flex justify-center items-center">
-              <Globe
-                height={276}
-                width={300}
-                backgroundColor="rgba(0, 0, 0, 0)"
-                backgroundImageOpacity={.1}
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 9.0192, lng: 38.7525, text: 'Addis Ababa, Ethiopia', color: 'white', size: 50 }]}
-              />
+            <div className="rounded-2xl w-full h-fit flex justify-center items-center">
+              <Globe />
             </div>
             <div>
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
@@ -74,10 +63,22 @@ const About = () => {
         </div>
 
         {/* Passion */}
-        {/* <div className="xl:col-span-2 xl:row-span-3">
+        <div className="w-full col-span-3">
           <div className="grid-container">
-            <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
-
+            <div className="w-full h-fit flex justify-center items-center">
+              <Globe
+                height={600}
+                width={600}
+                backgroundColor="rgba(0, 0, 0, 0)"
+                backgroundImageOpacity={.1}
+                autoRotate
+                showAtmosphere
+                showGraticules
+                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+                labelsData={[{ lat: 9.0192, lng: 38.7525, text: 'Addis Ababa, Ethiopia', color: 'white', size: 50 }]}
+              />
+            </div>
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
@@ -86,10 +87,10 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* Contact */}
-        {/* <div className="xl:col-span-1 xl:row-span-2">
+        <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
             <img
               src="assets/grid4.png"
@@ -105,7 +106,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
