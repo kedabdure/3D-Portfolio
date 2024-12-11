@@ -17,24 +17,24 @@ const Hero = () => {
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
-    <section className="min-h-screen flex flex-col bg-black overflow-hidden" id='home'>
-      <div className='c-space w-full h-full flex flex-col lg:flex-row items-center gap-5'>
-        <div className=" flex flex-col items-center justify-center lg:items-start mt-32 sm:mt-36 lg:mt-40 gap-5">
+    <section className="min-h-screen flex flex-col bg-black overflow-hidden " id='home'>
+      <div className='c-space w-full h-screen flex flex-col lg:flex-row items-center justify-center relative gap-5'>
+        <div className="flex flex-col items-center justify-center lg:items-start mt-28 sm:mt-36 lg:mt-28 gap-5">
           <p className="text-center font-medium text-white-700 font-generalsans">
             <span className="sm:text-2xl lg:text-2xl text-xl">
               Hi, I am Abdurehim <span className="waving-hand">👋</span>
             </span>
           </p>
-          <p className='hero_tag head-text w-full lg:mx-w-[90%]'>Building Products, Shaping Brands</p>
-          <div className="mt-10 lg:mt-32">
+          <p className='hero_tag head-text'>Building Products, Shaping Brands</p>
+          <div className="mt-3 lg:mt-32">
             <a href="#contact" className="w-fit">
-              <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-60 h-14 border-" />
+              <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-60 border-" />
             </a>
           </div>
         </div>
 
-        <div className="w-full lg:w-[700px] h-[350px] md:h-[95vh]">
-          <Canvas className="w-full h-full">
+        <div className="w-full h-full lg:max-w-[600px] mt-2 md:mt-20">
+          <Canvas>
             <ambientLight intensity={1} />
             <directionalLight intensity={3} position={[0, 10, 5]} />
             <directionalLight intensity={3} position={[10, 10, -5]} />
