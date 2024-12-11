@@ -42,7 +42,7 @@ const Projects = () => {
           </div>
 
           <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg" style={currentProject.logoStyle}>
-            <img className="w-10 h-10 shadow-sm" src={currentProject.logo} alt="logo" />
+            <img className="w-full h-10 shadow-sm" src={currentProject.logo} alt="logo" />
           </div>
 
           <div className="flex flex-col gap-5 text-white-600 my-5">
@@ -56,7 +56,7 @@ const Projects = () => {
             <div className="flex items-center gap-3">
               {currentProject.tags.map((tag, index) => (
                 <div key={index} className="tech-logo">
-                  <img src={tag.path} alt={tag.name} />
+                  <img src={tag.path} alt={tag.name} className='w-full h-full' />
                 </div>
               ))}
             </div>

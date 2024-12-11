@@ -2,73 +2,73 @@ export const navLinks = [
   {
     id: 1,
     name: 'Home',
-    href: '#home',
+    href: '/home',
   },
   {
     id: 2,
     name: 'About',
-    href: '#about',
+    href: '/about',
   },
   {
     id: 3,
     name: 'Project',
-    href: '#projects',
+    href: '/projects',
   },
   {
     id: 4,
     name: 'Work',
-    href: '#experience',
+    href: '/experience',
   },
   {
     id: 5,
     name: 'Contact',
-    href: '#contact',
+    href: '/contact',
   },
 ];
 
 export const clientReviews = [
   {
     id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
+    name: 'Selamawit Tadesse',
+    position: 'Marketing Manager at EthioAgro',
     img: 'assets/review1.png',
     review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+      'Working with Abdurehim was an incredible experience. He took our outdated website and turned it into a sleek, user-friendly platform that perfectly aligns with our brand. His dedication and attention to detail are second to none. Highly recommended for web projects!',
   },
   {
     id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
+    name: 'Ahmed Yusuf',
+    position: 'Founder of TechPoint Hub',
+    img: 'assets/testimonials/men4.jpg',
     review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+      'Abdurehim’s skill set is remarkable. He built a powerful and scalable solution for our e-commerce platform, and we’ve seen a significant boost in online engagement and sales. A highly professional and reliable developer!',
   },
   {
     id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
+    name: 'Samuel Kebede',
+    position: 'Project Lead at Addis Innovators',
+    img: 'assets/testimonials/men5.jpeg',
     review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+      'It was a pleasure working with Abdurehim. He took on our complex project requirements and delivered an intuitive, functional website that exceeded expectations. His ability to solve challenges efficiently is outstanding.',
   },
   {
     id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
+    name: 'James Anderson',
+    position: 'CEO of BrightFuture Enterprises',
+    img: 'assets/review2.png',
     review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+      'Abdurehim truly understands the essence of modern web development. He created a platform that not only met but exceeded our vision. His expertise in both frontend and backend development is exceptional. We couldn’t be happier with the results!',
   },
 ];
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+    title: 'NexAddis - Software Company',
+    desc: 'NexAddis is a forward-thinking software company dedicated to delivering innovative and user-centric digital solutions. From designing modern websites to building scalable applications, NexAddis focuses on crafting exceptional experiences tailored to client needs.',
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '/textures/project/project1.mp4',
+      'Built with cutting-edge technologies like Next.js 14, Tailwind CSS, TypeScript, Framer Motion, and MongoDB, NexAddis specializes in creating performance-driven solutions that empower businesses and redefine possibilities.',
+    href: 'https://nexaddis.onrender.com/',
+    texture: '/textures/project/nexaddis.mp4',
     logo: '/assets/project-logo1.png',
     logoStyle: {
       backgroundColor: '#2A1816',
@@ -84,7 +84,7 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
+        name: 'Mui',
         path: 'assets/tailwindcss.png',
       },
       {
@@ -100,13 +100,13 @@ export const myProjects = [
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+    title: 'Green Cycle - Sustainable Furniture Marketplace',
+    desc: 'Green Cycle is an innovative platform dedicated to promoting the reuse of furniture and wood materials. It connects buyers and sellers, fostering a sustainable marketplace for upcycled and pre-owned items while raising awareness about environmental conservation.',
     subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
+      'Built with Next.js 14, Mui, Threejs for VR product view, and MongoDB, Green Cycle provides an intuitive, responsive, and efficient platform for users to buy, sell, and explore eco-friendly furniture solutions, contributing to a greener future.',
+    href: 'https://online-shop-three-weld.vercel.app/',
+    texture: '/textures/project/green-front.mp4',
+    logo: '/assets/logos/greenCycle.png',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
@@ -116,23 +116,23 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'Next.js',
+        path: '/assets/icons/nextjs.svg',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Mui',
+        path: '/assets/icons/mui.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Framer Motion',
+        path: '/assets/icons/framer.png',
       },
       {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        id: 3,
+        name: 'Threejs',
+        path: '/assets/icons/nodejs.png',
       },
     ],
   },
@@ -176,13 +176,13 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+    title: 'Expert Handyman - Online Job Platform',
+    desc: 'Expert Handyman is a dynamic online platform connecting skilled handymen with customers in need of home repairs, maintenance, and other services. It streamlines the process of finding reliable professionals, making it easy for users to book and manage services online.',
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
+      'Built with Next.js 14, Appwrite, and MongoDB, Expert Handyman ensures a seamless and secure user experience, empowering both professionals and customers with modern tools for communication, scheduling, and payments.',
+    href: 'https://frontend-zlhx.onrender.com/',
+    texture: '/textures/project/experthandyman.mp4',
+    logo: '/assets/logos/handyman.png',
     logoStyle: {
       backgroundColor: '#0E1F38',
       border: '0.2px solid #0E2D58',
@@ -210,16 +210,21 @@ export const myProjects = [
         name: 'Framer Motion',
         path: '/assets/framer.png',
       },
+      {
+        id: 4,
+        name: 'Three js',
+        path: '/assets/icons/threejs.svg',
+      },
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+    title: 'Green Cycle Admin Panel - Sustainable Furniture Management',
+    desc: 'The Green Cycle Admin Panel streamlines the management of the sustainable furniture marketplace. It offers admins tools to oversee user activities, manage product listings, and ensure a seamless experience for buyers and sellers while fostering eco-conscious trade.',
     subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
+      'Developed with Next.js 14, MongoDB, and Tailwind CSS, the admin panel ensures efficient moderation, robust analytics, and scalable operations to support Green Cycle’s mission of promoting sustainability through furniture reuse.',
     href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
+    texture: '/textures/project/green-admin.mp4',
+    logo: '/assets/logos/green-admin-logo.svg',
     logoStyle: {
       backgroundColor: '#1C1A43',
       border: '0.2px solid #252262',
@@ -230,7 +235,7 @@ export const myProjects = [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: '/assets/icons/nextjs.svg',
       },
       {
         id: 2,
@@ -265,28 +270,28 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
+    name: 'Modern Web Experiences',
+    pos: 'Building Interactive and Immersive Applications',
+    duration: '2023 - Present',
+    title: "Leveraged modern technologies like React, Next.js, Three.js, and Framer Motion to create dynamic, responsive, and visually rich web applications. Dedicated to crafting cutting-edge digital experiences.",
     icon: '/assets/framer.svg',
     animation: 'victory',
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
+    name: 'Web Design and Development',
+    pos: 'Freelance Projects and UI/UX Exploration',
+    duration: '2022 - 2023',
+    title: "Transitioned into web design using Figma to craft intuitive interfaces and developed websites for local businesses. Focused on turning ideas into functional and visually appealing web solutions.",
     icon: '/assets/figma.svg',
     animation: 'clapping',
   },
   {
     id: 3,
-    name: 'Notion',
+    name: 'Foundations in Technology',
     pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+    duration: '2020 - 2022',
+    title: "Laid a strong foundation in programming with C, Bash, Java, and Python, while exploring web basics like HTML, CSS, and JavaScript. Gained Git proficiency for efficient project collaboration and management.",
     icon: '/assets/notion.svg',
     animation: 'salute',
   },
