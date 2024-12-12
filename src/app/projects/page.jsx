@@ -74,7 +74,7 @@ const Projects = () => {
             </a>
           </div>
 
-          <div className="flex justify-start items-center gap-3 mt-4">
+          <div className="flex justify-center sm:justify-start items-center gap-3 mt-4">
             <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
               <img src="/assets/left-arrow.png" alt="left arrow" />
             </button>

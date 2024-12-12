@@ -72,7 +72,7 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
         ))}
-        <div className="flex items-center justify-first gap-3 mt-10">
+        <div className="flex items-center justify-center sm:justify-start gap-3 mt-10">
           <button className="arrow-btn" onClick={handlePrev}>
             <img src="/assets/left-arrow.png" alt="left arrow" />
           </button>
