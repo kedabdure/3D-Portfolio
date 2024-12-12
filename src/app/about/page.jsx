@@ -8,23 +8,35 @@ import Globe from '@/components/Globe';
 import Button from '@/components/Botton';
 
 const About = () => {
-  const [hasCopied, setHasCopied] = useState(false);
+  const [emailCopied, setEmailCopied] = useState(false)
+  const [phoneCopied, setPhoneCopied] = useState(false)
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText('abdurehimk77@gmail.com');
-    setHasCopied(true);
+  const handleCopy = (value) => {
+    navigator.clipboard.writeText('+251953431572');
+    if (value === 'phone') {
+      setPhoneCopied(true);
+      setTimeout(() => {
+        setPhoneCopied(false);
+      }, 2000);
+    } else {
+      navigator.clipboard.writeText('abdurehimk77@gmail.com');
+      setEmailCopied(true);
+      setTimeout(() => {
+        setEmailCopied(false);
+      }, 2000);
+    }
 
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
   };
 
   return (
     <section className="c-space my-20" id="about">
+      <div className='mt-28 mb-4'>
+        <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>About Me</p>
+      </div>
       <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/developer.jpg" alt="grid-1" className="rounded-2xl w-full sm:h-[276px] h-fit object-cover" />
+            <img src="assets/developer.jpg" alt="grid-1" className="rounded-2xl w-full sm:h-[300px] h-fit object-cover" />
 
             <div>
               <p className="grid-headtext">Hi, I’m Abdurehim Kedir</p>
@@ -37,7 +49,7 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/techno-stack.png" alt="grid-2" className="rounded-2xl w-full sm:h-[276px] h-fit object-cover" />
+            <img src="assets/techno-stack.png" alt="grid-2" className="rounded-2xl w-full sm:h-[300px] h-fit object-cover" />
 
             <div>
               <p className="grid-headtext">Technology Stack</p>
@@ -51,60 +63,53 @@ const About = () => {
         {/* 3D Globe */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <div className="rounded-2xl w-full h-fit flex justify-center items-center">
-              <Globe />
+            <div className="rounded-2xl w-full h-fit flex justify-center items-center overflow-hidden">
+              <Globe height={300} width={350} />
             </div>
             <div>
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
               <p className="grid-subtext">I&apos;m based in Addis Ababa, Ethiopia and open to remote work worldwide.</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
             </div>
           </div>
         </div>
 
         {/* Passion */}
-        <div className="w-full col-span-3">
+        <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            <div className="w-full h-fit flex justify-center items-center">
-              <Globe
-                height={600}
-                width={600}
-                backgroundColor="rgba(0, 0, 0, 0)"
-                backgroundImageOpacity={.1}
-                autoRotate
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 9.0192, lng: 38.7525, text: 'Addis Ababa, Ethiopia', color: 'white', size: 50 }]}
-              />
-            </div>
+            <img src="assets/github-contribution.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
+
             <div>
-              <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+              <p className="grid-headtext github-title">Like I Never Sleep</p>
+              <p className="grid-subtext github-subtext">
+                Coding is my craft and my passion. Just like a GitHub graph filled with relentless contributions,
+                I thrive on solving problems, building innovative solutions, and continuously improving my skills.
+                Every line of code is a step forward, every project a milestone in my journey as a developer.
               </p>
             </div>
           </div>
         </div>
 
         {/* Contact */}
-        <div className="xl:col-span-1 xl:row-span-2">
-          <div className="grid-container">
+        <div className="xl:col-span-1 xl:row-span-3 relative">
+          <div className="grid-container flex flex-col">
             <img
-              src="assets/grid4.png"
+              src="assets/email-icon.png"
               alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
+              className="md:h-[96px] sm:h-[96px] object-contain sm:object-top"
             />
 
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
-                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">abdurehimk77@gmail.com</p>
+              <div className="copy-container" onClick={() => handleCopy('email')}>
+                <img src={emailCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" className='w-7 h-7' />
+                <p className="lg:text-lg font-medium text-gray_gradient text-white">abdurehimk77@gmail.com</p>
+              </div>
+              <div className="copy-container" onClick={() => handleCopy('phone')}>
+                <img src={phoneCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" className='w-7 h-7' />
+                <p className="lg:text-lg font-medium text-gray_gradient text-white">+251 953 431 572</p>
               </div>
             </div>
+            <Button name="Contact Me" isBeam containerClass="w-full md:w-[200px] mt-4 md:mt-20" />
           </div>
         </div>
       </div>

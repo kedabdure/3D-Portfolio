@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 const Globe = dynamic(() => import('react-globe.gl'), { ssr: false });
 
-const GlobePage = () => {
+const GlobePage = ({ width, height }) => {
   const globeEl = useRef();
 
   const myData = [
@@ -12,7 +12,7 @@ const GlobePage = () => {
       city: 'Addis Ababa',
       lat: 9.0192,
       lng: 38.7525,
-      color: '#ff0000',
+      color: '#00ff33',
       altitude: 0.1,
       size: 50,
     },
@@ -26,8 +26,8 @@ const GlobePage = () => {
     <div className='cursor-move'>
       <Globe
         ref={globeEl}
-        height={500}
-        width={500}
+        height={height}
+        width={width}
         backgroundColor="rgba(0, 0, 0, 0)"
         backgroundImageOpacity={0}
         showAtmosphere
