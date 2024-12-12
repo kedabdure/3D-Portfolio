@@ -1,6 +1,7 @@
 import "./index.css";
 import Navbar from "@/sections/header/Header";
 import Footer from "@/sections/footer/Footer";
+import Stairs from "@/components/Stairs/index";
 
 export const metadata = {
   title: "Portofolio",
@@ -10,10 +11,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="max-w-7xl lg:px-5">
-        <Navbar />
-        {children}
-        <Footer />
+      <body>
+        <Stairs>
+          <Navbar />
+          <div className="max-w-7xl lg:px-5 mx-auto">
+            {children}
+          </div>
+          <Footer />
+        </Stairs>
       </body>
     </html>
   );
