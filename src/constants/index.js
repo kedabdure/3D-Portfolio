@@ -103,7 +103,7 @@ export const myProjects = [
     title: 'NexAddis - Software Company',
     desc: 'NexAddis is a forward-thinking software company dedicated to delivering innovative and user-centric digital solutions. From designing modern websites to building scalable applications, NexAddis focuses on crafting exceptional experiences tailored to client needs.',
     subdesc:
-      'Built with cutting-edge technologies like Next.js 14, Tailwind CSS, TypeScript, Framer Motion, and MongoDB, NexAddis specializes in creating performance-driven solutions that empower businesses and redefine possibilities.',
+      'Built with cutting-edge technologies like React, Material UI and Framer Motion, NexAddis specializes in creating performance-driven solutions that empower businesses and redefine possibilities.',
     href: 'https://nexaddis.onrender.com/',
     texture: '/textures/project/nexaddis.mp4',
     logo: '/assets/logos/nexaddis.svg',
@@ -130,7 +130,7 @@ export const myProjects = [
     title: 'Expert Handyman - Online Job Platform',
     desc: 'Expert Handyman is a dynamic online platform connecting skilled handymen with customers in need of home repairs, maintenance, and other services. It streamlines the process of finding reliable professionals, making it easy for users to book and manage services online.',
     subdesc:
-      'Built with Next.js 14, Appwrite, and MongoDB, Expert Handyman ensures a seamless and secure user experience, empowering both professionals and customers with modern tools for communication, scheduling, and payments.',
+      'Built with Python, Flask, Jinja2, and Postgresql, Expert Handyman ensures a seamless and secure user experience, empowering both professionals and customers with modern tools for communication, scheduling and Booking Services.',
     href: 'https://frontend-zlhx.onrender.com/',
     texture: '/textures/project/experthandyman.mp4',
     logo: '/assets/logos/handyman.png',
@@ -167,7 +167,7 @@ export const myProjects = [
     title: 'Admin Panel - Sustainable Furniture Management',
     desc: 'The Green Cycle Admin Panel streamlines the management of the sustainable furniture marketplace. It offers admins tools to oversee user activities, manage product listings, and ensure a seamless experience for buyers and sellers while fostering eco-conscious trade.',
     subdesc:
-      'Developed with Next.js 14, MongoDB, and Tailwind CSS, the admin panel ensures efficient moderation, robust analytics, and scalable operations to support Green Cycle’s mission of promoting sustainability through furniture reuse.',
+      'Developed with Next.js 14, MongoDB, and Mui, the admin panel ensures efficient moderation, robust analytics, and scalable operations to support Green Cycle’s mission of promoting sustainability through furniture reuse.',
     href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
     texture: '/textures/project/green-admin.mp4',
     logo: '/assets/logos/green-admin-logo.svg',
