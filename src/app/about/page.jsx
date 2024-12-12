@@ -30,7 +30,7 @@ const About = () => {
 
   return (
     <section className="c-space my-20" id="about">
-      <div className='mt-28 mb-4'>
+      <div className='mt-28 my-7'>
         <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>About Me</p>
       </div>
       <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -76,7 +76,7 @@ const About = () => {
         {/* Passion */}
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/github-contribution.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
+            <img src="assets/github-contribution.png" alt="grid-3" className="w-full max-h-[266px] object-contain mb-2" />
 
             <div>
               <p className="grid-headtext github-title">Like I Never Sleep</p>
@@ -95,7 +95,7 @@ const About = () => {
             <img
               src="assets/email-icon.png"
               alt="grid-4"
-              className="md:h-[96px] sm:h-[96px] object-contain sm:object-top"
+              className="h-[96px] object-contain"
             />
 
             <div className="space-y-2">
