@@ -220,7 +220,7 @@ export const workExperiences = [
     pos: 'Building Interactive and Immersive Applications',
     duration: '2023 - Present',
     title: "Leveraged modern technologies like React, Next.js, Three.js, and Framer Motion to create dynamic, responsive, and visually rich web applications. Dedicated to crafting cutting-edge digital experiences.",
-    icon: '/assets/framer.svg',
+    icon: '/assets/icons/website.png',
     animation: 'victory',
   },
   {
@@ -238,7 +238,7 @@ export const workExperiences = [
     pos: 'Junior Web Developer',
     duration: '2020 - 2022',
     title: "Laid a strong foundation in programming with C, Bash, Java, and Python, while exploring web basics like HTML, CSS, and JavaScript. Gained Git proficiency for efficient project collaboration and management.",
-    icon: '/assets/notion.svg',
+    icon: '/assets/icons/vscode.svg',
     animation: 'salute',
   },
 ];
