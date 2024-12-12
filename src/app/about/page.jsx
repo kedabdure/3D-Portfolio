@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Globe from '@/components/Globe';
 
 import Button from '@/components/Botton';
+import { redirect } from 'next/navigation';
 
 const About = () => {
   const [emailCopied, setEmailCopied] = useState(false)
@@ -109,7 +110,10 @@ const About = () => {
                 <p className="lg:text-lg font-medium text-gray_gradient text-white">+251 953 431 572</p>
               </div>
             </div>
-            <Button name="Contact Me" isBeam containerClass="w-full md:w-[200px] mt-4 md:mt-20" />
+
+            <a href="/contact" className="w-fit">
+              <Button name="Contact Me" onClick={() => redirect('/contact')} isBeam containerClass="w-full md:w-[200px] mt-4 md:mt-20" />
+            </a>
           </div>
         </div>
       </div>

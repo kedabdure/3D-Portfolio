@@ -27,7 +27,7 @@ const Hero = () => {
           </p>
           <p className='hero_tag head-text'>Building Products, Shaping Brands</p>
           <div className="mt-3 lg:mt-32">
-            <a href="#contact" className="w-fit">
+            <a href="/contact" className="w-fit">
               <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-60 border-" />
             </a>
           </div>
