@@ -9,6 +9,7 @@ import { Center, OrbitControls } from '@react-three/drei';
 import { myProjects } from '@/constants';
 import CanvasLoader from '@/components/Loading.jsx';
 import DemoComputer from '@/components/DemoComputer.jsx';
+import Testimonials from '@/sections/testimonials/Testimonials';
 
 const projectCount = myProjects.length;
 
@@ -33,7 +34,9 @@ const Projects = () => {
 
   return (
     <section className="c-space my-20" id='projects'>
-      <p className="head-text">My Selected Work</p>
+      <div className='mt-28 mb-4'>
+        <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>Selected Projects</p>
+      </div>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
@@ -66,12 +69,12 @@ const Projects = () => {
               href={currentProject.href}
               target="_blank"
               rel="noreferrer">
-              <p>Check Live Site</p>
+              <p>Live Demo</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>
 
-          <div className="flex justify-between items-center mt-7">
+          <div className="flex justify-start items-center gap-3 mt-4">
             <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
               <img src="/assets/left-arrow.png" alt="left arrow" />
             </button>
@@ -96,6 +99,10 @@ const Projects = () => {
             <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
           </Canvas>
         </div>
+      </div>
+
+      <div className="">
+        <Testimonials />
       </div>
     </section>
   );

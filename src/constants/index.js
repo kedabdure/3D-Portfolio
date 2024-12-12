@@ -63,43 +63,6 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: 'NexAddis - Software Company',
-    desc: 'NexAddis is a forward-thinking software company dedicated to delivering innovative and user-centric digital solutions. From designing modern websites to building scalable applications, NexAddis focuses on crafting exceptional experiences tailored to client needs.',
-    subdesc:
-      'Built with cutting-edge technologies like Next.js 14, Tailwind CSS, TypeScript, Framer Motion, and MongoDB, NexAddis specializes in creating performance-driven solutions that empower businesses and redefine possibilities.',
-    href: 'https://nexaddis.onrender.com/',
-    texture: '/textures/project/nexaddis.mp4',
-    logo: '/assets/project-logo1.png',
-    logoStyle: {
-      backgroundColor: '#2A1816',
-      border: '0.2px solid #36201D',
-      boxShadow: '0px 0px 60px 0px #AA3C304D',
-    },
-    spotlight: '/assets/spotlight1.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'Mui',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
     title: 'Green Cycle - Sustainable Furniture Marketplace',
     desc: 'Green Cycle is an innovative platform dedicated to promoting the reuse of furniture and wood materials. It connects buyers and sellers, fostering a sustainable marketplace for upcycled and pre-owned items while raising awareness about environmental conservation.',
     subdesc:
@@ -132,47 +95,35 @@ export const myProjects = [
       {
         id: 3,
         name: 'Threejs',
-        path: '/assets/icons/nodejs.png',
+        path: '/assets/icons/threejs.svg',
       },
     ],
   },
   {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+    title: 'NexAddis - Software Company',
+    desc: 'NexAddis is a forward-thinking software company dedicated to delivering innovative and user-centric digital solutions. From designing modern websites to building scalable applications, NexAddis focuses on crafting exceptional experiences tailored to client needs.',
     subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/textures/project/project3.mp4',
-    logo: '/assets/project-logo3.png',
+      'Built with cutting-edge technologies like Next.js 14, Tailwind CSS, TypeScript, Framer Motion, and MongoDB, NexAddis specializes in creating performance-driven solutions that empower businesses and redefine possibilities.',
+    href: 'https://nexaddis.onrender.com/',
+    texture: '/textures/project/nexaddis.mp4',
+    logo: '/assets/logos/nexaddis.svg',
     logoStyle: {
-      backgroundColor: '#60f5a1',
-      background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-      border: '0.2px solid rgba(208, 213, 221, 1)',
-      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+      backgroundColor: '#593b00',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #915200',
     },
-    spotlight: '/assets/spotlight3.png',
+    spotlight: '/assets/spotlight1.png',
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: '/assets/icons/react.svg',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
+        name: 'Mui',
+        path: 'assets/icons/mui.png',
+      }
     ],
   },
   {
@@ -186,39 +137,34 @@ export const myProjects = [
     logoStyle: {
       backgroundColor: '#0E1F38',
       border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
+      boxShadow: '0px 0px 60px 0px #036482',
     },
     spotlight: '/assets/spotlight4.png',
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'Python',
+        path: '/assets/icons/python.svg',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Flask',
+        path: 'assets/icons/flask.svg',
       },
       {
         id: 3,
         name: 'TypeScript',
-        path: '/assets/typescript.png',
+        path: 'assets/icons/jinja.svg',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-      {
-        id: 4,
-        name: 'Three js',
-        path: '/assets/icons/threejs.svg',
-      },
+        name: 'postgresql',
+        path: '/assets/icons/postgresql.svg',
+      }
     ],
   },
   {
-    title: 'Green Cycle Admin Panel - Sustainable Furniture Management',
+    title: 'Admin Panel - Sustainable Furniture Management',
     desc: 'The Green Cycle Admin Panel streamlines the management of the sustainable furniture marketplace. It offers admins tools to oversee user activities, manage product listings, and ensure a seamless experience for buyers and sellers while fostering eco-conscious trade.',
     subdesc:
       'Developed with Next.js 14, MongoDB, and Tailwind CSS, the admin panel ensures efficient moderation, robust analytics, and scalable operations to support Green Cycle’s mission of promoting sustainability through furniture reuse.',
@@ -228,7 +174,7 @@ export const myProjects = [
     logoStyle: {
       backgroundColor: '#1C1A43',
       border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
+      boxShadow: '0px 0px 60px 0px #00aa1f',
     },
     spotlight: '/assets/spotlight5.png',
     tags: [
@@ -239,18 +185,18 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Mui',
+        path: 'assets/icons/mui.png',
       },
       {
         id: 3,
         name: 'TypeScript',
-        path: '/assets/typescript.png',
+        path: '/assets/icons/typescript.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Mongodb',
+        path: '/assets/icons/mongodb.svg',
       },
     ],
   },

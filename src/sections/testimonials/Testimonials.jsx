@@ -22,7 +22,9 @@ const Testimonials = () => {
 
   return (
     <section className="c-space my-20" id="testimonials">
-      <h3 className="head-text">Hear from My Clients</h3>
+      <div className='mt-28 mb-4'>
+        <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>What my client says</p>
+      </div>
       <Swiper
         ref={swiperRef}
         autoplay={{
@@ -70,7 +72,7 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
         ))}
-        <div className="flex items-center justify-center gap-5 mt-7">
+        <div className="flex items-center justify-first gap-3 mt-10">
           <button className="arrow-btn" onClick={handlePrev}>
             <img src="/assets/left-arrow.png" alt="left arrow" />
           </button>
