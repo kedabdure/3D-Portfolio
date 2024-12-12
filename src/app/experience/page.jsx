@@ -47,7 +47,7 @@ const Experience = () => {
               ))}
             </div>
           </div>
-          <div className="work-canvas min-h-[350px] md:h-full w-full">
+          <div className="work-canvas min-h-[450px]">
             <Canvas>
               <ambientLight intensity={1} />
               <directionalLight intensity={3} position={[0, 10, 5]} />
