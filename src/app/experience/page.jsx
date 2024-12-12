@@ -13,23 +13,12 @@ const Experience = () => {
 
   return (
     <section className="c-space my-20" id="experience">
+      <div className='mt-28 mb-7'>
+        <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>Experiences</p>
+      </div>
+
       <div className="w-full text-white-600">
-        <p className="head-text">My Work Experience</p>
-
         <div className="work-container">
-          <div className="work-canvas">
-            <Canvas>
-              <ambientLight intensity={7} />
-              <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-              <directionalLight position={[10, 10, 10]} intensity={1} />
-              <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
-
-              <Suspense fallback={<Loading />}>
-                <Developer position-y={-3} scale={3} animationName={animationName} />
-              </Suspense>
-            </Canvas>
-          </div>
-
           <div className="work-content">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperiences.map((item, index) => (
@@ -57,6 +46,20 @@ const Experience = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="work-canvas min-h-[350px] md:h-fit w-full">
+            <Canvas>
+              <ambientLight intensity={1} />
+              <directionalLight intensity={3} position={[0, 10, 5]} />
+              <directionalLight intensity={3} position={[10, 10, -5]} />
+              <directionalLight intensity={2} position={[0, 5, 10]} />
+              <directionalLight intensity={1} position={[-10, -5, -10]} />
+              <perspectiveCamera makeDefault position={[0, 0, 30]} />
+              <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
+              <Suspense fallback={<Loading />}>
+                <Developer position-y={-3.2} scale={3} rotation={[0, -0.5, 0]} animationName={animationName} />
+              </Suspense>
+            </Canvas>
           </div>
         </div>
       </div>
