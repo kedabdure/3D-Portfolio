@@ -1,20 +1,26 @@
 "use client"
 
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 import { navLinks } from '@/constants';
 
-const NavItems = ({ onClick = () => {} }) => (
-  <ul className="nav-ul">
-    {navLinks.map((item) => (
-      <li key={item.id} className="nav-li">
-        <a href={item.href} className="nav-li_a" onClick={onClick}>
-          {item.name}
-        </a>
-      </li>
-    ))}
-  </ul>
-);
+
+const NavItems = ({ onClick = () => { } }) => {
+  const pathname = usePathname();
+
+  return (
+    <ul className="nav-ul">
+      {navLinks.map((item) => (
+        <li key={item.id} className="nav-li">
+          <a href={item.href} className={`nav-li_a ${pathname === item.href ? 'text-white' : 'text-white-600'}`} onClick={onClick}>
+            {item.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
