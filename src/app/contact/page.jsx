@@ -70,10 +70,10 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
       {alert.show && <Alert {...alert} />}
 
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-[140vh] hidden md:block" />
+      <div className="relative min-h-screen md:min-h-[140vh] flex items-center justify-center flex-col">
+        <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-full hidden md:block" />
 
-        <div className="contact-container">
+        <div className="contact-container mb-0 md:mb-10">
           <div className='mt-[-5rem] md:mt-5 mb-5'>
             <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>Let's get in touch</p>
           </div>

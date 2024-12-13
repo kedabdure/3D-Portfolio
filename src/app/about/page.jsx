@@ -2,9 +2,7 @@
 
 import { useState } from 'react';
 
-
 import Globe from '@/components/Globe';
-import Stairs from "@/components/Stairs/index";
 
 import Button from '@/components/Botton';
 import { redirect } from 'next/navigation';
