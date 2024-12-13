@@ -74,7 +74,7 @@ const Contact = () => {
         <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-[140vh] hidden md:block" />
 
         <div className="contact-container">
-          <div className='mt-[-4rem] md:mt-5 mb-5'>
+          <div className='mt-[-5rem] md:mt-5 mb-5'>
             <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>Let's get in touch</p>
           </div>
           <p className="text-lg text-white-600 mt-3">
