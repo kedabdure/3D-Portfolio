@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 3D Portfolio Project
 
-## Getting Started
+This project is an interactive 3D portfolio built using Next.js, Three.js, and TailwindCSS. It showcases personal projects, skills, and experience in a visually engaging way. The portfolio is fully responsive, ensuring a seamless experience across various devices, and is designed to leave a lasting impression on visitors.
 
-First, run the development server:
+## Project Screenshots 
+**Frontend demo**: [https://3d-portfolio-one-sigma.vercel.app/home](https://3d-portfolio-one-sigma.vercel.app/home)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![s1](/readme-assets/hero.png)
+![s2](/readme-assets/experience.mp4)
+![s3](/readme-assets/about.png)
+![s4](/readme-assets/project.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Interactive 3D Elements**:
+  - Utilizes Three.js for creating stunning 3D visuals.
+  - Smooth animations and transitions for immersive navigation.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Project Showcase**:
+  - Highlight personal and professional projects.
+  - Detailed descriptions, tech stacks, and links to live demos or repositories.
 
-## Learn More
+- **Skill Display**:
+  - Visually appealing skill charts and indicators.
+  - Highlights proficiency levels for different technologies.
 
-To learn more about Next.js, take a look at the following resources:
+- **Responsive Design**:
+  - Fully responsive layout optimized for desktop, tablet, and mobile.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Customizable**:
+  - Easily extendable to include additional sections or update content.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+### Frontend:
+- Next.js
+- Three.js
+- R3F
+- TailwindCSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Animation:
+- Framer Motion
+- Adobe Mixamo
+- scketchfab
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Deployment:
+- Vercel
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/3d-portfolio.git
