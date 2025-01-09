@@ -6,7 +6,7 @@ This project is an interactive 3D portfolio built using Next.js, Three.js, and T
 **Frontend demo**: [https://3d-portfolio-one-sigma.vercel.app/home](https://3d-portfolio-one-sigma.vercel.app/home)
 
 ![s1](public/readme-assets/hero.png)
-![s2](public/readme-assets/experience.mp4)
+<video src="public/readme-assets/experience.mp4" controls style="width: 100%;"></video>
 ![s3](public/readme-assets/about.png)
 ![s4](public/readme-assets/project.png)
 
