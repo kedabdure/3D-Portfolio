@@ -74,18 +74,17 @@ const Contact = () => {
       <div className="relative min-h-screen md:min-h-[160vh] flex items-center justify-center flex-col">
         <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-full hidden md:block" />
 
-        <div className="relative contact-container mb-0 md:mb-10 border border-gray-700 rounded-lg p-6 shadow-2xl shadow-black-200">
-          <BorderBeam duration={8} initialOffset={200} size={400} />
-          <BorderBeam duration={8} initialOffset={0} size={400} />
+        <div className="relative max-w-lg mb-0 mt-12 md:mt-32 md:mb-10 border border-gray-700 rounded-lg px-4 py-8 md:px-6 shadow-2xl shadow-black-200">
+          <BorderBeam duration={12} initialOffset={60} size={200} />
+          <BorderBeam duration={12} initialOffset={0} size={200} />
 
-          <div className='mt-[-5rem] md:mt-5 mb-5'>
+          <div className='mt-0 md:mt-5 mb-5'>
             <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-slate-900/50 bg-clip-text text-center text-3xl font-semibold leading-none text-transparent">
               Let's get in touch
             </span>
           </div>
           <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
-            life, I’m here to help.
+            Need a new website, platform upgrade, or a unique project? I’m here to help.
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
