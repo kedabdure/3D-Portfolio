@@ -30,7 +30,7 @@ const About = () => {
   };
 
   return (
-    <div className="c-space my-20" id="about">
+    <div className="c-space my-20 min-h-screen" id="about">
       <div className='mt-32 mb-12'>
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-slate-900/10 bg-clip-text text-center text-4xl md:text-5xl font-semibold leading-none text-transparent">
           About Me

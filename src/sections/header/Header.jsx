@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 import { navLinks } from '@/constants';
 
@@ -13,9 +14,9 @@ const NavItems = ({ onClick = () => { } }) => {
     <ul className="nav-ul">
       {navLinks.map((item) => (
         <li key={item.id} className="nav-li">
-          <a href={item.href} className={`nav-li_a ${pathname === item.href ? 'text-white' : 'text-white-600'}`} onClick={onClick}>
+          <Link href={item.href} className={`nav-li_a ${pathname === item.href ? 'text-white' : 'text-white-600'}`} onClick={onClick}>
             {item.name}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

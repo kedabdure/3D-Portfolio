@@ -13,7 +13,7 @@ const Experience = () => {
   const [animationName, setAnimationName] = useState('idle');
 
   return (
-    <section className="c-space my-20" id="experience">
+    <section className="c-space my-20 min-h-screen" id="experience">
       <div className='mt-28 mb-7'>
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-slate-900/10 bg-clip-text text-center text-4xl md:text-5xl font-semibold leading-none text-transparent">
           Experiences

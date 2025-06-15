@@ -33,7 +33,7 @@ const Projects = () => {
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20" id='projects'>
+    <section className="c-space my-20 min-h-screen" id='projects'>
       <div className='mt-32 mb-16'>
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-slate-900/10 bg-clip-text text-center text-4xl md:text-5xl font-semibold leading-none text-transparent">
           Selected Projects
