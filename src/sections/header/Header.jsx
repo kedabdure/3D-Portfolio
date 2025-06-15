@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 import { navLinks } from '@/constants';
+import Image from 'next/image';
 
 
 const NavItems = ({ onClick = () => { } }) => {
@@ -30,12 +31,12 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 bg-black/90">
+    <header className="fixed top-0 left-0 right-0 z-40 bg-black/80">
       <div className="max-w-7xl lg:px-5 mx-auto">
-        <div className="flex justify-between items-center py-5 mx-auto c-space">
-          <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
-            Abdu K.
-          </a>
+        <div className="flex justify-between items-center py-2 mx-auto c-space">
+          <Link href="/" className="flex items-center" onClick={closeMenu}>
+            <Image src="/assets/logos/abdu-logo.png" alt="Logo" width={120} height={50} />
+          </Link>
 
           <button
             onClick={toggleMenu}

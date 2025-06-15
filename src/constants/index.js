@@ -63,6 +63,104 @@ export const clientReviews = [
 
 export const myProjects = [
   {
+    title: "Maerif Staffing Agency - Sustainable Workforce Solutions",
+    desc: "Maerif Staffing Agency is a modern platform dedicated to streamlining workforce management. It connects businesses with skilled workers, fostering efficient manpower allocation while promoting sustainable employment practices.",
+    subdesc: "Built with Next.js 15, MongoDB, Tailwind CSS, and React Query, Maerif provides a responsive, intuitive, and secure platform for companies to create, manage, and track manpower requests, contributing to optimized resource utilization and a sustainable economy.",
+    href: "https://maerifstaffingagency.com",
+    texture: "/textures/project/maerif-staffing-agency.mp4",
+    logo: "/assets/logos/maerif-logo.png",
+    logoStyle: {
+      backgroundColor: "#1E2A44",
+      border: "0.2px solid #2E3B55",
+      boxShadow: "0px 0px 50px 0px #4A90E24D"
+    },
+    spotlight: "/assets/spotlight3.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/icons/nextjs.svg"
+      },
+      {
+        id: 2,
+        name: "MongoDB",
+        path: "/assets/icons/mongodb.svg"
+      },
+      {
+        id: 3,
+        name: "Tailwind CSS",
+        path: "/assets/icons/tailwind-logo.svg"
+      }
+    ]
+  },
+  {
+    title: "Addis Interiors - Immersive Interior Design Showcase",
+    desc: "Addis Interiors is an interactive platform designed to showcase interior design projects with immersive 3D visualizations. The platform enables users to explore panoramic views of design concepts in a smooth, engaging environment, offering a modern solution for design presentation and client collaboration.",
+    subdesc: "Developed using Next.js 14, Three.js, React Three Fiber, and Tailwind CSS, Addis Interiors delivers a seamless 3D experience with optimized performance and responsive design. It features a clean user interface, efficient 3D rendering, and scalable architecture for both designers and clients seeking an intuitive visual showcase.",
+    href: "https://addis-interiors.vercel.app",
+    texture: "/textures/project/addisinterior.mp4",
+    logo: "/assets/logos/addisInteriors.png",
+    logoStyle: {
+      backgroundColor: "#1C1C21",
+      border: "0.2px solid #2E3B55",
+      boxShadow: "0px 0px 50px 0px #4A90E24D"
+    },
+    spotlight: "/assets/spotlight3.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/icons/nextjs.svg"
+      },
+      {
+        id: 2,
+        name: "Three.js",
+        path: "/assets/icons/threejs.svg"
+      },
+      {
+        id: 3,
+        name: "Tailwind CSS",
+        path: "/assets/icons/tailwind-logo.svg"
+      },
+      {
+        id: 4,
+        name: 'MUI',
+        path: '/assets/icons/mui.png',
+      },
+    ]
+  },
+  {
+    title: "Dewa Clinic - Comprehensive 24/7 Healthcare Services",
+    desc: "Dewa Clinic is a trusted healthcare provider in Addis Ababa offering 24/7 comprehensive medical services. The clinic specializes in dermatology, dental care, pediatrics, minor surgery, internal medicine, radiology, ENT, and obstetrics & gynecology, serving thousands of patients with quality care.",
+    subdesc: "Powered by modern web technologies including Next.js 14, MongoDB, React Query, and Tailwind CSS, the Dewa Clinic platform ensures reliable patient interaction, appointment management, and streamlined healthcare services with an intuitive, responsive design.",
+    href: "https://dewaclinic.com",
+    texture: "/textures/project/dewaclinic.mp4",
+    logo: "/assets/logos/dewaclinic-logo.png",
+    logoStyle: {
+      backgroundColor: "#1C1C21",
+      border: "0.2px solid #2E3B55",
+      boxShadow: "0px 0px 50px 0px #4A90E24D"
+    },
+    spotlight: "/assets/spotlight3.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/icons/nextjs.svg"
+      },
+      {
+        id: 2,
+        name: "MongoDB",
+        path: "/assets/icons/mongodb.svg"
+      },
+      {
+        id: 4,
+        name: "Tailwind CSS",
+        path: "/assets/icons/tailwind-logo.svg"
+      }
+    ]
+  },
+  {
     title: 'Green Cycle - Sustainable Furniture Marketplace',
     desc: 'Green Cycle is an innovative platform dedicated to promoting the reuse of furniture and wood materials. It connects buyers and sellers, fostering a sustainable marketplace for upcycled and pre-owned items while raising awareness about environmental conservation.',
     subdesc:
@@ -127,48 +225,11 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Expert Handyman - Online Job Platform',
-    desc: 'Expert Handyman is a dynamic online platform connecting skilled handymen with customers in need of home repairs, maintenance, and other services. It streamlines the process of finding reliable professionals, making it easy for users to book and manage services online.',
-    subdesc:
-      'Built with Python, Flask, Jinja2, and Postgresql, Expert Handyman ensures a seamless and secure user experience, empowering both professionals and customers with modern tools for communication, scheduling and Booking Services.',
-    href: 'https://frontend-zlhx.onrender.com/',
-    texture: '/textures/project/experthandyman.mp4',
-    logo: '/assets/logos/handyman.png',
-    logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #036482',
-    },
-    spotlight: '/assets/spotlight4.png',
-    tags: [
-      {
-        id: 1,
-        name: 'Python',
-        path: '/assets/icons/python.svg',
-      },
-      {
-        id: 2,
-        name: 'Flask',
-        path: 'assets/icons/flask.svg',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: 'assets/icons/jinja.svg',
-      },
-      {
-        id: 4,
-        name: 'postgresql',
-        path: '/assets/icons/postgresql.svg',
-      }
-    ],
-  },
-  {
     title: 'Admin Panel - Sustainable Furniture Management',
     desc: 'The Green Cycle Admin Panel streamlines the management of the sustainable furniture marketplace. It offers admins tools to oversee user activities, manage product listings, and ensure a seamless experience for buyers and sellers while fostering eco-conscious trade.',
     subdesc:
       'Developed with Next.js 14, MongoDB, and Mui, the admin panel ensures efficient moderation, robust analytics, and scalable operations to support Green Cycle’s mission of promoting sustainability through furniture reuse.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+    href: 'https://online-shop-indol-three.vercel.app',
     texture: '/textures/project/green-admin.mp4',
     logo: '/assets/logos/green-admin-logo.svg',
     logoStyle: {
