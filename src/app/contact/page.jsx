@@ -2,6 +2,7 @@
 
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import { BorderBeam } from "@/components/magicui/border-beam.jsx";
 
 import useAlert from '@/hooks/useAlert.js';
 import Alert from '@/components/Alert';
@@ -70,12 +71,17 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
       {alert.show && <Alert {...alert} />}
 
-      <div className="relative min-h-screen md:min-h-[140vh] flex items-center justify-center flex-col">
+      <div className="relative min-h-screen md:min-h-[160vh] flex items-center justify-center flex-col">
         <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-full hidden md:block" />
 
-        <div className="contact-container mb-0 md:mb-10">
+        <div className="relative contact-container mb-0 md:mb-10 border border-gray-700 rounded-lg p-6 shadow-2xl shadow-black-200">
+          <BorderBeam duration={8} initialOffset={200} size={400} />
+          <BorderBeam duration={8} initialOffset={0} size={400} />
+
           <div className='mt-[-5rem] md:mt-5 mb-5'>
-            <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>Let's get in touch</p>
+            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-slate-900/50 bg-clip-text text-center text-3xl font-semibold leading-none text-transparent">
+              Let's get in touch
+            </span>
           </div>
           <p className="text-lg text-white-600 mt-3">
             Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
@@ -122,7 +128,7 @@ const Contact = () => {
               />
             </label>
 
-            <button className="field-btn" type="submit" disabled={loading}>
+            <button className="relative field-btn" type="submit" disabled={loading}>
               {loading ? 'Sending...' : 'Send Message'}
 
               <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />

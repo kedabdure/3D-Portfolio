@@ -31,8 +31,10 @@ const About = () => {
 
   return (
     <div className="c-space my-20" id="about">
-      <div className='mt-28 mb-7'>
-        <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>About Me</p>
+      <div className='mt-32 mb-12'>
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-slate-900/10 bg-clip-text text-center text-4xl md:text-5xl font-semibold leading-none text-transparent">
+          About Me
+        </span>
       </div>
       <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">

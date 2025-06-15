@@ -15,10 +15,12 @@ const Experience = () => {
   return (
     <section className="c-space my-20" id="experience">
       <div className='mt-28 mb-7'>
-        <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>Experiences</p>
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-slate-900/10 bg-clip-text text-center text-4xl md:text-5xl font-semibold leading-none text-transparent">
+          Experiences
+        </span>
       </div>
 
-      <div className='mt-28 mb-7'>
+      <div className='mt-12 mb-7'>
         <SkillsOrbit />
       </div>
 

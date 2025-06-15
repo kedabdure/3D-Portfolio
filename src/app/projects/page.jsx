@@ -9,7 +9,7 @@ import { Center, OrbitControls } from '@react-three/drei';
 import { myProjects } from '@/constants';
 import CanvasLoader from '@/components/Loading.jsx';
 import DemoComputer from '@/components/DemoComputer.jsx';
-import Testimonials from '@/sections/testimonials/Testimonials';
+import { Reviews } from '@/components/Reviews';
 
 const projectCount = myProjects.length;
 
@@ -34,8 +34,10 @@ const Projects = () => {
 
   return (
     <section className="c-space my-20" id='projects'>
-      <div className='mt-28 mb-4'>
-        <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>Selected Projects</p>
+      <div className='mt-32 mb-16'>
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-slate-900/10 bg-clip-text text-center text-4xl md:text-5xl font-semibold leading-none text-transparent">
+          Selected Projects
+        </span>
       </div>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 w-full">
@@ -102,7 +104,13 @@ const Projects = () => {
       </div>
 
       <div className="">
-        <Testimonials />
+        <div className='mt-28 mb-16'>
+          <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-slate-900/20 bg-clip-text text-center text-3xl sm:text-4xl font-semibold leading-none text-transparent">
+            What People Say
+          </span>
+        </div>
+
+        <Reviews />
       </div>
     </section>
   );

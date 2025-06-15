@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/general-sans');
+/* @import url('https://fonts.cdnfonts.com/css/general-sans'); */
 
 @tailwind base;
 @tailwind components;
@@ -19,7 +19,7 @@ body {
   }
 
   .head-text {
-    @apply sm:text-2xl text-3xl font-semibold text-gray_gradient;
+    @apply sm:text-2xl text-3xl font-semibold text-gray_gradient !bg-gradient-to-br !from-slate-200 !to-slate-900/10 bg-clip-text text-transparent font-generalsans;
   }
 
   .nav-ul {
