@@ -8,6 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '@/constants';
 import Button from '@/components/Botton';
 import DeveloperRoom from '@/components/DeveloperRoom';
+import { AuroraText } from "@/components/magicui/aurora-text";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -21,11 +22,11 @@ const Hero = () => {
       <div className='c-space w-full h-screen flex flex-col lg:flex-row items-center justify-center relative gap-5'>
         <div className="flex flex-col items-center justify-center lg:items-start mt-28 sm:mt-36 lg:mt-28 gap-5">
           <p className="text-center font-medium text-white-700 font-generalsans">
-            <span className="sm:text-2xl lg:text-2xl text-xl">
+            <span className="sm:text-2xl lg:text-2xl text-xl font-mono">
               Hi, I am Abdurehim <span className="waving-hand">👋</span>
             </span>
           </p>
-          <p className='hero_tag w-full head-text'>Building Impactful, Problem-Solving Products</p>
+          <p className='hero_tag w-full head-text'><AuroraText>Building Impactful</AuroraText> Problem Solving Products</p>
           <div className="mt-3 lg:mt-24">
             <a href="/contact" className="w-fit">
               <Button isBeam name="Let's work together" containerClass="relative sm:w-fit w-full sm:min-w-60 h-14 rounded-md" />
