@@ -6,6 +6,7 @@ import Globe from '@/components/Globe';
 
 import Button from '@/components/Botton';
 import { redirect } from 'next/navigation';
+import Image from 'next/image';
 
 const About = () => {
   const [emailCopied, setEmailCopied] = useState(false)
@@ -36,7 +37,7 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/developer.jpg" alt="grid-1" className="rounded-2xl w-full sm:h-[300px] h-fit object-cover" />
+            <Image src="/assets/developer.jpg" alt="grid-1" width={500} height={500} className="rounded-2xl w-full sm:h-[300px] h-fit object-cover" />
 
             <div>
               <p className="grid-headtext">Hi, I’m Abdurehim Kedir</p>
@@ -49,7 +50,7 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/techno-stack.png" alt="grid-2" className="rounded-2xl w-full sm:h-[300px] h-fit object-cover" />
+            <Image src="/assets/techstack2.png" width={500} height={500} alt="grid-2" className="rounded-2xl w-full sm:h-[300px] h-fit object-contain" />
 
             <div>
               <p className="grid-headtext">Technology Stack</p>
@@ -64,7 +65,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <div className="rounded-2xl w-full h-fit flex justify-center items-center overflow-hidden">
-              <Globe height={300} width={350} />
+              <Globe height={300} width={360} />
             </div>
             <div>
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
@@ -76,7 +77,7 @@ const About = () => {
         {/* Passion */}
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/github-contribution.png" alt="grid-3" className="w-full max-h-[266px] object-contain mb-2" />
+            <Image src="/assets/github-contribution.png" width={600} height={500} alt="grid-3" className="w-full max-h-[266px] object-contain mb-2" />
 
             <div>
               <p className="grid-headtext github-title">Like I Never Sleep</p>
@@ -111,7 +112,7 @@ const About = () => {
             </div>
 
             <a href="/contact" className="w-fit mt-3 mx-auto">
-              <Button name="Contact Me" onClick={() => redirect('/contact')} isBeam containerClass="w-full md:w-[200px] mt-4 md:mt-20" />
+              <Button name="Contact Me" onClick={() => redirect('/contact')} isBeam containerClass="relative w-full md:w-[200px] mt-4 md:mt-20" />
             </a>
           </div>
         </div>

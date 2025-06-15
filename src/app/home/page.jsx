@@ -25,10 +25,10 @@ const Hero = () => {
               Hi, I am Abdurehim <span className="waving-hand">👋</span>
             </span>
           </p>
-          <p className='hero_tag head-text'>Building Products, Shaping Brands</p>
-          <div className="mt-3 lg:mt-32">
+          <p className='hero_tag w-full head-text'>Building Impactful, Problem-Solving Products</p>
+          <div className="mt-3 lg:mt-24">
             <a href="/contact" className="w-fit">
-              <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-60 border-" />
+              <Button isBeam name="Let's work together" containerClass="relative sm:w-fit w-full sm:min-w-60 h-14 rounded-md" />
             </a>
           </div>
         </div>

@@ -7,6 +7,7 @@ import { OrbitControls } from '@react-three/drei';
 import Developer from '@/components/Developer.jsx';
 import Loading from '@/components/Loading.jsx';
 import { workExperiences } from '@/constants/index.js';
+import { SkillsOrbit } from '@/components/SkillOrbit';
 
 const Experience = () => {
   const [animationName, setAnimationName] = useState('idle');
@@ -15,6 +16,10 @@ const Experience = () => {
     <section className="c-space my-20" id="experience">
       <div className='mt-28 mb-7'>
         <p className='sm:text-3xl text-3xl font-semibold text-gray_gradient'>Experiences</p>
+      </div>
+
+      <div className='mt-28 mb-7'>
+        <SkillsOrbit />
       </div>
 
       <div className="w-full text-white-600">
